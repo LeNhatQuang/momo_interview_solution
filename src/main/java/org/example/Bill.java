@@ -4,11 +4,17 @@ import java.time.LocalDate;
 import java.util.Objects;
 
 public class Bill {
+    @Printable(header = "Id")
     private int id;
+    @Printable(header = "Type")
     private String type;
+    @Printable(header = "Amount")
     private int amount;
+    @Printable(header = "Due date")
     private LocalDate dueDate;
+    @Printable(header = "State")
     private String state;
+    @Printable(header = "Provider")
     private ProviderEnum provider;
 
     public Bill(int id, String type, int amount, LocalDate dueDate, String state, ProviderEnum provider) {

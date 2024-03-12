@@ -27,6 +27,7 @@ public class PaymentServiceTest {
         paymentService.addBill(bill);
         paymentService.addBill(bill1);
         List<Integer> ids = Arrays.asList(1, 2);
+        paymentService.listBills();
         paymentService.payBills(ids);
         paymentService.showTransactionHistory();
         assertEquals("PAID", bill.getState());

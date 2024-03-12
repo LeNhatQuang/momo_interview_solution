@@ -28,9 +28,7 @@ public class PaymentService {
     }
 
     public void listBills() {
-        for (Bill bill : bills) {
-            System.out.println(billToString(bill));
-        }
+        Printer.getInstance().printList(bills);
     }
 
     public void payBills(List<Integer> ids) {
